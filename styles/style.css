@@ -54,9 +54,9 @@
 .description
 {
     width: 100%;
-    height: 800px;
-    margin-top: 150px;
-    background-image: linear-gradient(#2D078737,#2D078737),url("../images/mainBack.png");
+    height: 700px;
+    margin-top: 90px;
+    background-image: linear-gradient(#2D078750,#2D078750),url("../images/mainBack.png");
     background-size: cover;
     background-position: top;
     display: flex;
@@ -70,22 +70,136 @@
     color: white;
     font-size: 1.5em;
     text-align: center;
-    margin-right: -100px;
+    margin-right: -80px;
+    margin-top: 80px;
 }
 .descriptionText h1
 {
     font-family: 'Uncial Antiqua';
     line-height: 100px;
 }
-.produit
+.elexire
 {
     margin-top: 100px;
     width: 35%;
     height: 100%;
 }
 
-.produit img
+.elexire img
 {
     width: 100%;
     height: 100%;
+}
+/**************GAMME HOTEL Part******************/
+.gammeHotelSection, .gammeParticulierSection
+{
+    margin-top: 50px;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+}
+.gammeHotelSection h1,.gammeParticulierSection h1
+{
+    padding-bottom: 20px;
+}
+.gammeHotel
+{
+    height: 85%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    gap: 10px 5px;
+}
+.produit
+{
+    background-color: #2D078763;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.produit img
+{
+    height: 80%;
+    width: 80%;
+    align-self: center;
+}
+.pdtVertical
+{
+    grid-row: 1/3;
+}
+.commander,.decouvrez
+{
+    text-align: center;
+    background-color: #0a0a0a;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pdtVertical .commander
+{
+    padding: 20px 0px;
+}
+
+/**************GAMME PARTICULIER Part******************/
+.gammeParticulierSection
+{
+    height: 500px;
+    margin-bottom: 100px;
+}
+.gammeParticulier
+{
+    height: 500px;
+    background-color: #2D078763;
+}
+.gammeParticulier img
+{
+    height: 95%;
+    width: 90%;
+}
+.decouvrez
+{
+    padding: 20px;
+}
+/**************FOOTER Part******************/
+.footer
+{
+    width: 100%;
+    height: 250px;
+    padding-bottom: 30px;
+    background-image: url("../images/footerBack.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #FCFBFB;
+}
+.adresse h2
+{
+    font-family: 'Uncial Antiqua';
+}
+
+.footer .droits
+{
+    align-self: flex-end;
+}
+
+
+.reseauxSociaux
+{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.reseauxSociaux img
+{
+    width: 20px;
+    height: 20px;
+}
+.reseauxSociaux img:nth-child(2)
+{
+    width: 15px;
 }
