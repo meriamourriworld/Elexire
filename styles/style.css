@@ -36,7 +36,38 @@
 {
     text-decoration: none;
     color: black;
+    position: relative;
 }
+#menu a:hover
+{
+    color: white;
+}
+#menu a:not(a[id="panier"]):hover::before
+{
+    content: url("../images/aile.png");
+    position: absolute;
+    right: -30px;
+    top: -12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: rotate(-20deg);
+    animation: .5s voler alternate infinite;
+}
+
+
+@keyframes voler {
+    from
+    {
+        transform: rotate(-30deg);
+    }
+    to
+    {
+        transform: rotate(-20deg);
+    }
+}
+
+
 #menu a img
 {
     transform: scale(0.5);
@@ -155,7 +186,7 @@
 .gammeParticulier img
 {
     height: 90%;
-    width: 90%;
+    width: 80%;
 }
 .decouvrez
 {
@@ -382,9 +413,6 @@
 .contactForm input[type="submit"]
 {
     background-color: #0a0a0ad4;
-    border: none;
-    border-radius: 5px;
-    color: white;
 }
 .contactForm h2, .contactForm p
 {
