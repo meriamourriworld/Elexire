@@ -158,6 +158,10 @@
 {
     grid-row: 1/3;
 }
+.produit a
+{
+    text-decoration: none;
+}
 .commander,.decouvrez
 {
     text-align: center;
@@ -246,7 +250,7 @@
 {
     width: 100%;
     height: 500px;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
@@ -393,7 +397,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .contactForm
 {
@@ -421,4 +424,15 @@
 .contactForm p
 {
     margin-bottom: 20px;
+}
+
+/**************SOURCE PAGE******************/
+.sourceMainSection
+{
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
